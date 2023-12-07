@@ -22,7 +22,6 @@ export const getPacientes: RequestHandler = async (req, res) => {
 export const getPacienteById: RequestHandler = async (req, res) => {
   try {
     const paciente = await Paciente.findByPk(req.params.id)
-
     if(paciente) {
       res.status(200).json({
         message: 'Paciente encontrado',
