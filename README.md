@@ -45,7 +45,7 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 
 4. Se comprueba que esta corriendo la API, si en la terminal sale el siguiente mensaje
 
-    ![API](Imagenes\image.png)
+    ![API]Imagenes\image00.png
 
 5. Ya corriendo la API, con POSTMAN se prueba cada una de las peticiones establecidas para la API
 
