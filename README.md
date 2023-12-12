@@ -27,7 +27,7 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 1.  Clonar el repositorio desde la siguiente ubicacion en GITHUB 
 
 ```bash
-    https://github.com/harold-rojas10/API-REST-EPS.git
+   https://github.com/yeraldin12/HOSPITAL.git
 
 ```
 2. Despues de colonar y abrir el pryecto en VS-Code, se deben instalar los paquetes requeridos con el siguiente comando en la terminal del proyecto 
@@ -35,59 +35,58 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 ```bash
     npm install || sudo npm install
 
-![Alt text](image.png)
+![-]Imagenes\image-1.png
 ```
 3. Terminada la instalación de los paquetes, se procede a ejecutar la API con el siguiente comando
 
 ```bash
     npm run dev
-    ![-](image-1.png)
 ```
 
 4. Se comprueba que esta corriendo la API, si en la terminal sale el siguiente mensaje
 
-    ![Api Corriendo](Imagenes/API-Run.png)
+    ![API](Imagenes\image.png)
 
 5. Ya corriendo la API, con POSTMAN se prueba cada una de las peticiones establecidas para la API
 
 # PETICIONES SOPORTADAS POR LA API
 
 ## PETICIONES GET
-1. Devuelva una pagina con el siguiente mensaje "API DE hospital corriendo!" 
+1. Devuelva una pagina con el siguiente mensaje "Bienvenido a mi Api!" 
 ```bash
 http://localhost:3000/
 ```
-![GET](Imagenes/image-2.png)
+![GET]Imagenes\image-2.png
 
 2. Retorna un JSON con los pacientes registrados
 ```bash
 http://localhost:3000/api/pacientes
 ```
-![GET*](image-3.png)
+![GET*]Imagenes\image-3.png
 
 3. Retorna un JSON con el paciente asociado al id que se solicite
 ```bash
 http://localhost:3000/api/pacientes/1002595099,
 ```
-!![GET**](image-4.png)
+!![GET**]Imagenes\imageGet.png
 
 4. Retorna un JSON con los doctores registrados
 ```bash
 http://localhost:3000/api/doctores
 ```
-!![GET***](image-5.png)
+!![GET***]Imagenes\image-5.png
 
 5. Retorna un JSON con el doctor asociado al id que se solicite
 ```bash
 http://localhost:3000/api/doctores/:id
 ```
-![GET****](image-6.png)
+![GET****]Imagenes\image-6.png
 
 6. Retorna un JSON con las citas registradas
 ```bash
 http://localhost:3000/api/citas
 ```
-!![GET*****](image-7.png)
+!![GET*****]Imagenes\image-7.png
 
 7. Retorna un JSON con la cita asociado segun los parametros query enviados de fecha_hora,id_profesional,id_numeroCedula
 ```bash
@@ -133,7 +132,7 @@ Para las peticiones POST Y PUT, se requiere enviar un JSON con los datos necesar
 ```bash
 http://localhost:3000/api/pacientes 
 ```
-![POST](image-8.png)
+!![POST]Imagenes\imagePOST.png
 
 2. Envia el JSON de doctores con los datos diligenciados
 ```bash
@@ -150,7 +149,7 @@ http://localhost:3000/api/citas
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
-![PUT](image-9.png)
+![put]Imagenes\imagePUT.png
 
 2. Envia el JSON de doctores con los datos diligenciados
 ```bash
@@ -167,7 +166,7 @@ http://localhost:3000/api/citas/?fecha=2023-12-11T00:00:00.000Z&profesional=id_p
 ```bash
 http://localhost:3000/api/pacientes/:id
 ```
-![DEL*](image-10.png)
+![DEL*]!Imagenes\imageDELE.png
 
 2. Elimina el doctor correspondiente al id
 ```bash
