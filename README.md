@@ -57,7 +57,7 @@ Guia basica para ejecutar y comprobar el funcionamiento de la API REST
 ```bash
 http://localhost:3000/
 ```
-![GET](image-2.png)
+![GET](Imagenes/image-2.png)
 
 2. Retorna un JSON con los pacientes registrados
 ```bash
